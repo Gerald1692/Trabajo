@@ -30,10 +30,8 @@ namespace Centro_de_Estudio.Controllers
             //holaa
         }
 
-
-        //prueba de verificacion 
-
-
+        //PRUEBA11        
+       
 
     }
 }
