@@ -8,5 +8,17 @@ namespace Centro_de_Estudio.Controllers
         {
             return View();
         }
+
+        public IActionResult V_contrasena()
+        {
+            return View();
+        }
+
+        // Agregado: acción para la vista de registro
+        public IActionResult V_Registrarse()
+        {
+            return View();
+        }
+
     }
 }

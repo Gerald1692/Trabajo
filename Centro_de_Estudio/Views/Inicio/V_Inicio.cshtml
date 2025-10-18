@@ -48,7 +48,7 @@
                                 <input id="password" name="password" type="password" class="form-control" placeholder="Contraseña" required>
                                 
                             </div>
-                            <div class="form-text"><a href="#" class="small">¿Olvidaste tu contraseña?</a></div>
+                            <div class="form-text"><a asp-controller="Inicio" asp-action="V_contrasena" class="small">¿Olvidaste tu contraseña?</a></div>
                             <div class="invalid-feedback">Por favor ingresa la contraseña.</div>
                         </div>
 
@@ -62,7 +62,7 @@
                         <button type="submit" class="btn btn-primary w-100">Ingresar</button>
 
                         <div class="enlaces text-center mt-3">
-                            <span>¿No tienes cuenta?</span> <a href="#">Registrarse</a>
+                            <span>¿No tienes cuenta?</span> <a asp-controller="Inicio" asp-action="V_Registrarse">Registrarse</a>
                         </div>
                     </form>
                 </div>
