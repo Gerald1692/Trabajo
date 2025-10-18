@@ -1,0 +1,140 @@
+﻿/* Estilos base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../../recourses/fondo.svg') ;
+}
+
+/* Sidebar oscuro fijo (inspirado en el ejemplo de W3Schools) */
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:transparent;
+    
+    padding-top: 20px;
+}
+    .sidebar .logo {
+        display: block;
+        border-radius:20px;
+        margin: -5px auto;
+        margin-bottom: 15%;
+        width: 80%;
+        max-width: 150px; /* Ancho máximo para pantallas grandes */
+        height: auto;
+    }
+
+
+
+    .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #02BEE1;
+        display: block;
+    }
+
+        .sidebar a:hover {
+            color:#000000;
+        }
+
+/* Contenido principal */
+.main {
+    margin-left: 200px; /* igual al ancho del sidebar:contentReference[oaicite:7]{index=7} */
+    padding: 20px;
+}
+
+/* Encabezado superior */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de tarjetas */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo de tarjeta de curso */
+.card {
+    background-color: #fff;
+    flex: 1 1 calc(50% - 20px);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra para efecto de tarjeta:contentReference[oaicite:8]{index=8} */
+    border-radius: 5px;
+    position: relative;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-course {
+    margin-bottom: 10px;
+}
+
+.card-schedule,
+.card-program {
+    font-size: 90%;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.card button {
+    padding: 8px 12px;
+    background-color: #02BEE1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+    .card button:hover {
+        background-color: #000000;
+    }
+/* Icono de notificación en la tarjeta */
+.notification {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #e74c3c;
+}
+
+/* Media queries para diseño responsivo */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+        .sidebar a {
+            float: left;
+        }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex:  1 1 100%;
+          
+    }
+}
