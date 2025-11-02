@@ -9,59 +9,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula Virtual - Inicio</title>
-    <link href="~/css/m_principal/menuprincipal.css" rel="stylesheet" />
+    <link href="~/css/m_principal/MenuPrincipal.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <!-- Biblioteca de iconos Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- NAV SUPERIOR -->
+    <nav class="topnav" role="navigation" aria-label="Principal">
 
-    <div class="sidebar">
-        <img src="recourses/logillo.jpg" alt="Logo del sitio" class="logo">
-        <a href="#" class="active">Inicio</a>
-        <a href="#">Cursos</a>
-        <a href="#">Estudiantes</a>
-        
-    </div>
+        <ul class="nav-actions">
+            <!-- Para navegación por secciones -->
+            <li><a class="nav-link active" href="#inicio" data-target="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a class="nav-link" href="#cursos" data-target="#cursos"><i class="fa-solid fa-layer-group"></i> Cursos</a></li>
+            <li><a class="nav-link" href="#config" data-target="#config"><i></i> Configuración</a></li>
 
-    <div class="main">
-        <div class="header">
+            <!-- Si prefieres navegación por rutas, cambia los href a /inicio, /cursos, /config -->
+            <!-- <li><a class="nav-link" href="/inicio">Inicio</a></li> -->
+        </ul>
+        <div class="brand">
+
+            <span>Aula Virtual</span>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main">
+        <header class="header">
             <h1>Inicio</h1>
+        </header>
 
+        <!-- Título de sección como en la UI -->
+        <div class="section-title">
+            <i class="fa-regular fa-square-plus"></i> Estudiante
         </div>
 
-        <div class="cards-container">
-            <div class="card">
+        <!-- Grid de tarjetas (2 por fila) -->
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <article class="course-card">
+                <div class="thumb">
+                    <div class="badge">ISB-25</div>
 
-                <div class="card-title">ISB-25</div>
-                <div class="card-course">INVESTIGACIÓN DE OPERACIONES</div>
-                <div class="card-schedule">Lunes, Miércoles 8:00-10:00</div>
-                <div class="card-program">BACH-SIS</div>
-                <button>Ingresar</button>
-            </div>
-            <div class="card">
-                <div class="card-title">MAT-30</div>
-                <div class="card-course">MATEMÁTICAS DISCRETAS</div>
-                <div class="card-schedule">Martes, Jueves 10:00-12:00</div>
-                <div class="card-program">BACH-MAT</div>
-                <button>Ingresar</button>
-            </div>
-            <div class="card">
+                </div>
 
-                <div class="card-title">FIS-20</div>
-                <div class="card-course">FÍSICA I</div>
-                <div class="card-schedule">Lunes, Viernes 8:00-09:30</div>
-                <div class="card-program">BACH-FIS</div>
-                <button>Ingresar</button>
-            </div>
-            <div class="card">
-                <div class="card-title">DOC-10</div>
-                <div class="card-course">REDACCIÓN</div>
-                <div class="card-schedule">Martes 8:00-10:00</div>
-                <div class="card-program">BACH-LIT</div>
-                <button>Ingresar</button>
-            </div>
+                <div class="card-body">
+                    <div class="card-top">
+                        <h3 class="course-name">INVESTIGACIÓN DE OPERACIONES</h3>
+                        <div class="program">BACH-SIS</div>
+                    </div>
+
+                    <div class="meta">
+                        <div class="meta-left">
+                            <span><i class="fa-regular fa-calendar"></i> Mar. de 7:30 p.m. a 10:00 p.m.</span>
+                        </div>
+                        <div class="meta-right">
+                            <a class="enter" href="#">
+                                Ingresar <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="course-card">
+                <div class="thumb">
+                    <div class="badge">ISB-26</div>
+
+                </div>
+
+                <div class="card-body">
+                    <div class="card-top">
+                        <h3 class="course-name">SISTEMAS DE INFORMACIÓN</h3>
+                        <div class="program">BACH-SIS</div>
+                    </div>
+
+                    <div class="meta">
+                        <div class="meta-left">
+                            <span><i class="fa-regular fa-calendar"></i> Mar. de 5:00 p.m. a 7:30 p.m.</span>
+                            <span class="sub">MARTES 5:00 - 7:30 ISB 26</span>
+                        </div>
+                        <div class="meta-right">
+                            <a class="enter" href="#">
+                                Ingresar <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="course-card">
+                <div class="thumb">
+                    <div class="badge">ISB-28</div>
+
+                </div>
+
+                <div class="card-body">
+                    <div class="card-top">
+                        <h3 class="course-name">REDES Y COMUNICACIÓN DE DATOS</h3>
+                        <div class="program">BACH-SIS</div>
+                    </div>
+
+                    <div class="meta">
+                        <div class="meta-left">
+                            <span><i class="fa-regular fa-calendar"></i> Mié. de 7:30 p.m. a 10:00 p.m.</span>
+                            <span><i class="fa-solid fa-desktop"></i> Aula: 10 LAB 2 INFO</span>
+                            <span class="sub">Grupo 2</span>
+                        </div>
+                        <div class="meta-right">
+                            <a class="enter" href="#">
+                                Ingresar <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="course-card">
+                <div class="thumb">
+                    <div class="badge">ISB-27</div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-top">
+                        <h3 class="course-name">INGENIERÍA Y UTILIZACIÓN DE SOFTWARE</h3>
+                        <div class="program">BACH-SIS</div>
+                    </div>
+
+                    <div class="meta">
+                        <div class="meta-left">
+                            <span><i class="fa-regular fa-calendar"></i> Mié. de 5:00 p.m. a 7:30 p.m.</span>
+                            <span><i class="fa-solid fa-desktop"></i> Aula: 10 LAB 2 INFO</span>
+                        </div>
+                        <div class="meta-right">
+                            <a class="enter" href="#">
+                                Ingresar <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
-    </div>
 </body>
