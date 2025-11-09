@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CentroEstudioBLL\CentroEstudioBLL.csproj" />
     <ProjectReference Include="..\CentroEstudioEntities\CentroEstudioEntities.csproj" />
   </ItemGroup>
 
